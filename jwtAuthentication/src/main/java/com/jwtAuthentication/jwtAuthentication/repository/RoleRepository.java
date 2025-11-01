@@ -1,0 +1,8 @@
+package com.jwtAuthentication.jwtAuthentication.repository;
+
+import com.jwtAuthentication.jwtAuthentication.entity.Role;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RoleRepository extends JpaRepository<Role,Integer> {
+    Role findByRole(String name);
+}
